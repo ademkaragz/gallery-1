@@ -1,0 +1,23 @@
+.gallery {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    margin: 5rem;
+}
+
+.gallery > div {
+    flex: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+}
+
+.gallery > div:hover {
+    flex: 5;
+}
